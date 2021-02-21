@@ -413,15 +413,8 @@ h3,
 .far,
 .fab {
     font-size: 2.5rem;
-    transition: all 250ms ease; 
 }
 
-.far:hover,
-.fab:hover {
-    color: #8BDCDC;
-    transition: all 250ms ease; 
-    cursor: pointer;
-}
 
 /* todo: nastylovat vsechny obecne, ne pres kontext */
 a {
@@ -442,9 +435,18 @@ a:visited {
     color: #8BDCDC;
 }
 
+.text--green {
+    color: #0F9797;
+}
+
 /*********************************************************************
     NAVIGATION
 *********************************************************************/
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+}
 
 .navigation__link {
     font-size: 1.5rem;
@@ -452,15 +454,23 @@ a:visited {
     text-decoration: none;
     border: none;
     color: #000;
+    display: block;
 }
 
-.navigation__link:hover {
-    border: none;
-}
-
-/* todo: NEFUNGUJE MI */
 .navigation__link::first-letter {
     color: #0F9797;
+}
+
+.navigation__link:active,
+.navigation__link:visited,
+.navigation__link:hover {
+    border: none;
+    color: inherit;
+}
+
+.navigation__link:hover,
+.navigation__link:hover::first-letter {
+    color: #8BDCDC;
 }
 
 /*********************************************************************
@@ -469,6 +479,7 @@ a:visited {
 
 .header__heading {
     text-transform: lowercase;
+    width: min-content;
 }
 
 .header__about {
@@ -477,6 +488,30 @@ a:visited {
     letter-spacing: 0.05em;
 }
 
+.header__icons a {
+    border-bottom: none;
+}
+
+.header__icon {
+    padding-right: 1rem;
+    color: #0F9797;
+    transition: all 250ms ease;
+}
+
+.header__icon:hover,
+.header__icon:visited {
+    color: #8BDCDC;
+    transition: all 250ms ease;
+}
+
+
+
+/*********************************************************************
+    ABOUT
+*********************************************************************/
+.about__stack {
+    color: #0F9797;
+}
 
 /*********************************************************************
     PROJECTS
@@ -504,3 +539,34 @@ a:visited {
 /*********************************************************************
     FOOTER
 *********************************************************************/
+
+.footer {
+    text-align: center;
+    background-color: #0F9797;
+    color: #C3FFFF;
+}
+
+.contact__heading {
+    color: #E2FFFF;
+}
+
+.contact__links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact__link {
+    color: #C3FFFF;
+    text-decoration: underline;
+    /* todo: divne icony s flexboxem */
+    display: flex;
+    align-items: center;
+}
+
+.contact__link:hover {
+    text-decoration: none;
+}
+
+.contact__icon {
+    padding-right: 1rem;
+}

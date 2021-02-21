@@ -24,9 +24,9 @@
                 <div class="header__description">
                     <p class="header__about">UI/UX Designer turned front-end developer. Passionate about language learning, photography, and travel. </p>
                     <div class="header__icons">
-                        <i class="far fa-envelope"></i>
-                        <i class="fab fa-github"></i>
-                        <i class="fab fa-linkedin"></i>
+                        <a href="#"><i class="far header__icon fa-envelope"></i></a>
+                        <a href="#"><i class="fab header__icon fa-github"></i></a>
+                        <a href="#"><i class="fab header__icon fa-linkedin"></i></a>
                     </div>
                 </div>
             </section>
@@ -34,21 +34,19 @@
         
         <main>
             <section id="about">
-                <h2>About me</h2>
+                <h2><span class="text--green">About</span> me</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada. Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam, nec tristique libero turpis a nisl. Sed sed mauris et <a href="#todo">purus varius varius</a> nec iaculis purus. Aenean consequat dictum cursus. Donec at arcu interdum, tempor libero mattis, iaculis lorem. </p>
-                <div class="about__stack">
-                    <h3>Tech stack:</h3>
-                    <ul>
-                        <li><i class="fab fa-html5">HTML</i></li>
-                        <li><i class="fab fa-css3-alt">CSS</i></li>
-                        <li><i class="fab fa-js-square">JavaScript</i></li>
-                    </ul>
-                </div>
+                <h3>Tech stack:</h3>
+                <ul class="about__stack">
+                    <li><i class="fab fa-html5">HTML</i></li>
+                    <li><i class="fab fa-css3-alt">CSS</i></li>
+                    <li><i class="fab fa-js-square">JavaScript</i></li>
+                </ul>
             </section>
     
             <!-- todo: asi neni potreba cela velka sekce -->
             <section id="projects">
-                <h2>Latest projects</h2>
+                <h2>Latest <span class="text--green">projects</span></h2>
                 <article class="project project--left">
                     <div class="project__image">
                         <img src="#" alt="Project Name">
@@ -72,20 +70,13 @@
         </main>
 
         <footer id="contact" class="footer">
-            <h2>Get in touch</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada. </p>
-            <div class="contact__icon">
-                <i class="far fa-envelope"></i>
-                <a class="contact__link" href="#">madragoun@gmail.com</a>
-            </div>
-            <div class="contact__icon">
-                <i class="fab fa-github"></i>
-                <a class="contact__link" href="#">Github</a>
-            </div>
-            <div class="contact__icon">
-                <i class="fab fa-linkedin"></i>
-                <a class="contact__link" href="#">Linkedin</a>
-            </div>
+            <h2 class="contact__heading">Get in touch</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada.</p>
+            <section class="contact__links">
+                    <a class="contact__link" href="#"><i class="far contact__icon fa-envelope"></i>madragoun@gmail.com</a>
+                    <a class="contact__link" href="#"><i class="fab contact__icon fa-github"></i>Github</a>
+                    <a class="contact__link" href="#"><i class="fab contact__icon fa-linkedin"></i>Linkedin</a>
+            </section>
         </footer>
         
     </body>
