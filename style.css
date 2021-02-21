@@ -348,26 +348,32 @@ template {
     display: none;
 }
 
-* {
+/*********************************************************************
+**********************************************************************
+
+    MY CODE
+
+**********************************************************************
+*********************************************************************/
+
+*,
+::before,
+::after {
     box-sizing: border-box;
 }
 
 html {
     font-family: 
-    'Noto Sans',
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    "Roboto",
-    "Helvetica Neue", Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 62.5%; /* 1 rem = 10 px */
-    color: #5C5C5C;
-}
-
-body {
-    font-size: 1.8rem;
-    line-height: 3.2rem;
+        'Noto Sans',
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue", Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #5e5353;
 }
 
 h1,
@@ -378,17 +384,17 @@ h2 {
 }
 
 h1 {
-    font-size: 9.2rem;
+    font-size: 5.75rem;
     line-height: 1.1;
 }
 
 h2 {
-    font-size: 4.8rem;
-    line-height: 5.2rem;
+    font-size: 3rem;
+    line-height: 1.1;
 }
 
 h3,
-#navigation a {
+.navigation {
     font-family: 
         'Dosis',
         -apple-system,
@@ -401,32 +407,35 @@ h3,
 }
 
 
-i {
-    font-size: 4rem;
+.far,
+.fab {
+    font-size: 2.5rem;
     transition: all 250ms ease; 
 }
 
-i:hover {
+.far:hover,
+.fab:hover {
     color: #8BDCDC;
     transition: all 250ms ease; 
     cursor: pointer;
 }
 
-section a {
+/* todo: nastylovat vsechny obecne, ne pres kontext */
+a {
     color: #0F9797;
     text-decoration: none;
     border-bottom: 1px solid #0F9797;
     transition: all 250ms ease;
 }
 
-section a:hover {
-    /* jak bych udelala, aby ten underline odjel treba na jednu stranu? */
+a:hover {
+    /* todo: animate underline */
     border-bottom: 1px solid transparent;
     transition: all 250ms ease;
 }
 
-section a:hover,
-section a:visited {
+a:hover,
+a:visited {
     color: #8BDCDC;
 }
 
@@ -434,15 +443,20 @@ section a:visited {
     NAVIGATION
 *********************************************************************/
 
-#navigation a {
-    font-size: 2.4rem;
+.navigation__link {
+    font-size: 1.5rem;
     line-height: 3.1;
     text-decoration: none;
+    border: none;
     color: #000;
 }
 
-/* NEFUNGUJE MI */
-#navigation a::first-letter {
+.navigation__link:hover {
+    border: none;
+}
+
+/* todo: NEFUNGUJE MI */
+.navigation__link::first-letter {
     color: #0F9797;
 }
 
@@ -450,13 +464,13 @@ section a:visited {
     HEADER 
 *********************************************************************/
 
-#header h1 {
+.header h1 {
     text-transform: lowercase;
 }
 
 .header__about {
-    font-size: 2.4rem;
-    line-height: 3.3rem;
+    font-size: 1.5rem;
+    line-height: 1.4;
     letter-spacing: 0.05em;
 }
 
@@ -465,19 +479,25 @@ section a:visited {
     PROJECTS
 *********************************************************************/
 
-.projects__image {
-    display: inline-block;
-    width: 4.75rem;
-    height: 3.4rem;
+.project__image {
+    /* todo: muzu pouzit px na image? */
+    width: 475px;
+    height: auto;
 }
 
-.projects__stack {
-    font-size: 1.2rem;
-    line-height: 3.2rem;
+.project__stack {
+    font-size: 0.75rem;
+    line-height: 2.6;
+}
+
+.project__link {
+    display: inline-block;
+}
+
+.project__link::after {
+    content: " ››";
 }
 
 /*********************************************************************
     FOOTER
 *********************************************************************/
-
-/* NEVIM, JAK ZMENIT VELIKOST TEXTU U IKONEK BEZ ZMENY VELIKOSTI IKONKY, ANIZ BYCH TEXT MUSELA VYNDAT Z <I> TAGU */

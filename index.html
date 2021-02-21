@@ -12,67 +12,79 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <nav id="navigation">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
-        <main>
-            <section id="header">
+        <header>
+            <nav class="navigation">
+                <a class="navigation__link" href="#about">About</a>
+                <a class="navigation__link" href="#projects">Projects</a>
+                <a class="navigation__link" href="#contact">Contact</a>
+            </nav>
+            
+            <section class="header">
                 <h1>Markéta Andreev Dragoun</h1>
                 <div class="header__description">
                     <p class="header__about">UI/UX Designer turned front-end developer. Passionate about language learning, photography, and travel. </p>
-                    <div class="header__description--icons">
+                    <div class="header__icons">
                         <i class="far fa-envelope"></i>
                         <i class="fab fa-github"></i>
                         <i class="fab fa-linkedin"></i>
                     </div>
                 </div>
             </section>
-    
+        </header>
+        
+        <main>
             <section id="about">
                 <h2>About me</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada. Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam, nec tristique libero turpis a nisl. Sed sed mauris et <a href='#'>purus varius varius</a> nec iaculis purus. Aenean consequat dictum cursus. Donec at arcu interdum, tempor libero mattis, iaculis lorem. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada. Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam, nec tristique libero turpis a nisl. Sed sed mauris et <a href="#todo">purus varius varius</a> nec iaculis purus. Aenean consequat dictum cursus. Donec at arcu interdum, tempor libero mattis, iaculis lorem. </p>
                 <div class="about__stack">
-                    <i class="fab fa-html5">HTML</i>
-                    <i class="fab fa-css3-alt">CSS</i>
-                    <i class="fab fa-js-square">JavaScript</i>
+                    <h3>Tech stack:</h3>
+                    <ul>
+                        <li><i class="fab fa-html5">HTML</i></li>
+                        <li><i class="fab fa-css3-alt">CSS</i></li>
+                        <li><i class="fab fa-js-square">JavaScript</i></li>
+                    </ul>
                 </div>
             </section>
     
+            <!-- todo: asi neni potreba cela velka sekce -->
             <section id="projects">
-                <div class="projects__single--left">
-                    <div class="projects__image">
+                <h2>Latest projects</h2>
+                <article class="project project--left">
+                    <div class="project__image">
                         <img src="#" alt="Project Name">
-                        <span class="projects__stack">HTML CSS JavaScript Node.js</span>
+                        <span class="project__stack">HTML CSS JavaScript Node.js</span>
                     </div>
                     <h3>Project name</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada. Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam, nec tristique libero turpis a nisl.</p>
-                    <a href="#">view ››</a>
-                </div>
-            </section>
-    
-            <section id="projects">
-                <div class="projects__single--right">
-                    <div class="projects__image">
+                    <a class="project__link" href="#">view</a>
+                </article>
+
+                <article class="project project--right">
+                    <div class="project__image">
                         <img src="#" alt="Project Name">
-                        <span class="projects__stack">HTML CSS JavaScript Node.js</span>
+                        <span class="project__stack">HTML CSS JavaScript Node.js</span>
                     </div>
                     <h3>Project name</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada. Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam, nec tristique libero turpis a nisl.</p>
-                    <a href="#">view ››</a>
-                </div>
+                    <a class="project__link" href="#">view</a>
+                </article>
             </section>
         </main>
 
-        <footer id="contact">
+        <footer id="contact" class="footer">
             <h2>Get in touch</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada. </p>
-            <div class="contact__icons">
-                <i class="far fa-envelope">madragoun@gmail.com</i>
-                <i class="fab fa-github">Github</i>
-                <i class="fab fa-linkedin">LinkedIn</i>
+            <div class="contact__icon">
+                <i class="far fa-envelope"></i>
+                <a class="contact__link" href="#">madragoun@gmail.com</a>
+            </div>
+            <div class="contact__icon">
+                <i class="fab fa-github"></i>
+                <a class="contact__link" href="#">Github</a>
+            </div>
+            <div class="contact__icon">
+                <i class="fab fa-linkedin"></i>
+                <a class="contact__link" href="#">Linkedin</a>
             </div>
         </footer>
         
