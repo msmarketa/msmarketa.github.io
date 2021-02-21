@@ -371,6 +371,9 @@ html {
         "Roboto",
         "Helvetica Neue", Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
     font-size: 1.125rem;
     line-height: 1.8;
     color: #5e5353;
@@ -464,7 +467,7 @@ a:visited {
     HEADER 
 *********************************************************************/
 
-.header h1 {
+.header__heading {
     text-transform: lowercase;
 }
 
