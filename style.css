@@ -450,7 +450,11 @@ section a:visited {
     HEADER 
 *********************************************************************/
 
-.header__description--perex {
+#header h1 {
+    text-transform: lowercase;
+}
+
+.header__about {
     font-size: 2.4rem;
     line-height: 3.3rem;
     letter-spacing: 0.05em;
