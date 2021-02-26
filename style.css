@@ -350,55 +350,71 @@ template {
 
 /*********************************************************************
 **********************************************************************
-
-    MY CODE
+─────────▄──────────────▄
+────────▌▒█───────────▄▀▒▌
+────────▌▒▒▀▄───────▄▀▒▒▒▐
+───────▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐
+─────▄▄▀▒▒▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐
+───▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀██▀▒▌
+──▐▒▒▒▄▄▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄▒▒▌
+──▌▒▒▐▄█▀▒▒▒▒▄▀█▄▒▒▒▒▒▒▒█▒▐
+─▐▒▒▒▒▒▒▒▒▒▒▒▌██▀▒▒▒▒▒▒▒▒▀▄▌
+─▌▒▀▄██▄▒▒▒▒▒▒▒▒▒▒▒░░░░▒▒▒▒▌            MY CODE
+─▌▀▐▄█▄█▌▄▒▀▒▒▒▒▒▒░░░░░░▒▒▒▐
+▐▒▀▐▀▐▀▒▒▄▄▒▄▒▒▒▒▒░░░░░░▒▒▒▒▌
+▐▒▒▒▀▀▄▄▒▒▒▄▒▒▒▒▒▒░░░░░░▒▒▒▐
+─▌▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒▒▒░░░░▒▒▒▒▌
+─▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▐
+──▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▄▒▒▒▒▌
+────▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀
+───▐▀▒▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄▀
+──▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀▀   
 
 **********************************************************************
 *********************************************************************/
 
 *,
-::before,
-::after {
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 html {
     font-family: 
-        'Noto Sans',
+        "Noto Sans",
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
         "Roboto",
-        "Helvetica Neue", Arial, sans-serif,
+        "Helvetica Neue", "Arial", sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 body {
-    font-size: 1.125rem;
+    /* font-size: 1.125rem; */
+    font-size: 1rem;
     line-height: 1.8;
-    color: #5e5353;
+    color: #5C5C5C;
 }
 
 h1,
 h2 {
-    font-family: 'DM Serif Display', Georgia, 'Times New Roman', Times, serif;
+    font-family: "DM Serif Display", "Georgia", "Times New Roman", "Times", serif;
     color: #000;
     font-weight: 400;
+    line-height: 1.1;
 }
 
 h1 {
-    font-size: 5.75rem;
-    line-height: 1.1;
+    font-size: 3.75rem;
 }
 
 h2 {
-    font-size: 3rem;
-    line-height: 1.1;
+    font-size: 2rem;
 }
 
-h3,
-.navigation {
-    font-family: 
+h3 {
+    font-family:
         'Dosis',
         -apple-system,
         BlinkMacSystemFont,
@@ -406,17 +422,10 @@ h3,
         "Roboto",
         "Helvetica Neue", Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.2rem;
     text-transform: uppercase;
 }
 
-
-.far,
-.fab {
-    font-size: 2.5rem;
-}
-
-
-/* todo: nastylovat vsechny obecne, ne pres kontext */
 a {
     color: #0F9797;
     text-decoration: none;
@@ -431,12 +440,62 @@ a:hover {
 }
 
 a:hover,
+a:active,
 a:visited {
     color: #8BDCDC;
 }
 
+.content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/*********************************************************************
+    MISC
+*********************************************************************/
+/* FONT AWESOME */
+
+.far,
+.fab {
+    font-size: 2.5rem;
+}
+/* TEXT */
 .text--green {
     color: #0F9797;
+}
+
+/* STACK ICONS */
+.stack__html,
+.stack__css,
+.stack__js {
+    font-size: 1.2rem;
+    margin-right: 0.6rem;
+}
+
+.stack__html {
+    color: #DC4D25;
+}
+
+.stack__css {
+    color: #156DB0;
+}
+
+.stack__js {
+    color: #E2C430;
+}
+
+.stack__text {
+    font-family:
+        'Dosis',
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue", Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #5C5C5C;
 }
 
 /*********************************************************************
@@ -446,11 +505,21 @@ a:visited {
 .navigation {
     display: flex;
     justify-content: space-around;
+    margin-top: 1rem;
 }
 
 .navigation__link {
-    font-size: 1.5rem;
-    line-height: 3.1;
+    font-family:
+        'Dosis',
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue", Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    line-height: 1.3;
     text-decoration: none;
     border: none;
     color: #000;
@@ -470,6 +539,7 @@ a:visited {
 
 .navigation__link:hover,
 .navigation__link:hover::first-letter {
+    /* todo: add transition */
     color: #8BDCDC;
 }
 
@@ -477,18 +547,24 @@ a:visited {
     HEADER 
 *********************************************************************/
 
+.header {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 .header__heading {
     text-transform: lowercase;
     width: min-content;
 }
 
 .header__about {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.4;
     letter-spacing: 0.05em;
 }
 
-.header__icons a {
+.header__link,
+.header__link:hover {
     border-bottom: none;
 }
 
@@ -498,8 +574,7 @@ a:visited {
     transition: all 250ms ease;
 }
 
-.header__icon:hover,
-.header__icon:visited {
+.header__icon:hover {
     color: #8BDCDC;
     transition: all 250ms ease;
 }
@@ -511,21 +586,29 @@ a:visited {
 *********************************************************************/
 .about__stack {
     color: #0F9797;
+    list-style: none;
 }
 
 /*********************************************************************
     PROJECTS
 *********************************************************************/
+.project {
+    margin-bottom: 2rem;
+}
 
 .project__image {
-    /* todo: muzu pouzit px na image? */
-    width: 475px;
+    /* todo: jak tu chytre zmenit veliksot, abych ji tam nemjusela psat natvrdo? */
+    max-width: 100%;
     height: auto;
+    position: relative;
 }
 
 .project__stack {
     font-size: 0.75rem;
     line-height: 2.6;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
 }
 
 .project__link {
@@ -541,26 +624,41 @@ a:visited {
 *********************************************************************/
 
 .footer {
+    /* todo: zaobleni */
     text-align: center;
     background-color: #0F9797;
     color: #C3FFFF;
+    padding-bottom: 2rem;
 }
+
+/*********************************************************************
+    CONTACT
+*********************************************************************/
 
 .contact__heading {
     color: #E2FFFF;
+    padding-top: 2rem;
 }
 
 .contact__links {
-    display: flex;
-    justify-content: space-around;
+    display: inline-block;
 }
 
 .contact__link {
     color: #C3FFFF;
-    text-decoration: underline;
-    /* todo: divne icony s flexboxem */
+    text-decoration: none;
     display: flex;
     align-items: center;
+    margin-bottom: 0.6rem;
+}
+
+.contact__text {
+    border-bottom: 1px solid #C3FFFF;
+}
+
+.contact__link:hover .contact__text {
+    display: inline-block;
+    border-bottom-color: transparent;
 }
 
 .contact__link:hover {

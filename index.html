@@ -3,11 +3,12 @@
     <head>
         <meta charset="utf-8">
         <title>Marketa Andreev Dragoun Portfolio</title>
+        <!-- todo: dopsat description -->
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dosis&family=Noto+Sans:ital@0;1&display=swap" rel="stylesheet">
-        <!-- todo: stahovat jen ikony, kter0 pouzivam -->
+        <!-- todo: stahovat jen ikony, ktere pouzivam -->
         <link rel="stylesheet" href="fontawesome/all.css">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -22,25 +23,26 @@
             <section class="header">
                 <h1 class="header__heading">Markéta Andreev Dragoun</h1>
                 <div class="header__description">
-                    <p class="header__about">UI/UX Designer turned front-end developer. Passionate about language learning, photography, and travel. </p>
+                    <p class="header__about">UI/UX Designer turned front-end developer. Passionate about language learning, photography, and travel.</p>
                     <div class="header__icons">
-                        <a href="#"><i class="far header__icon fa-envelope"></i></a>
-                        <a href="#"><i class="fab header__icon fa-github"></i></a>
-                        <a href="#"><i class="fab header__icon fa-linkedin"></i></a>
+                        <!-- todo: pridat class na a -->
+                        <a class="header__link" href="#"><i class="far header__icon fa-envelope"></i></a>
+                        <a class="header__link" href="#"><i class="fab header__icon fa-github"></i></a>
+                        <a class="header__link" href="#"><i class="fab header__icon fa-linkedin"></i></a>
                     </div>
                 </div>
             </section>
         </header>
         
-        <main>
+        <main class="content">
             <section id="about">
                 <h2><span class="text--green">About</span> me</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada. Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam, nec tristique libero turpis a nisl. Sed sed mauris et <a href="#todo">purus varius varius</a> nec iaculis purus. Aenean consequat dictum cursus. Donec at arcu interdum, tempor libero mattis, iaculis lorem. </p>
                 <h3>Tech stack:</h3>
                 <ul class="about__stack">
-                    <li><i class="fab fa-html5">HTML</i></li>
-                    <li><i class="fab fa-css3-alt">CSS</i></li>
-                    <li><i class="fab fa-js-square">JavaScript</i></li>
+                    <li class="stack__text"><i class="stack__html fab fa-html5"></i>HTML</li>
+                    <li class="stack__text"><i class="stack__css fab fa-css3-alt"></i>CSS</li>
+                    <li class="stack__text"><i class="stack__js fab fa-js-square"></i>JavaScript</li>
                 </ul>
             </section>
     
@@ -49,7 +51,7 @@
                 <h2>Latest <span class="text--green">projects</span></h2>
                 <article class="project project--left">
                     <div class="project__image">
-                        <img src="#" alt="Project Name">
+                        <img src="https://satyr.dev/400x320" alt="Project Name">
                         <span class="project__stack">HTML CSS JavaScript Node.js</span>
                     </div>
                     <h3>Project name</h3>
@@ -59,11 +61,11 @@
 
                 <article class="project project--right">
                     <div class="project__image">
-                        <img src="#" alt="Project Name">
+                        <img src="https://satyr.dev/400x320" alt="Project Name">
                         <span class="project__stack">HTML CSS JavaScript Node.js</span>
                     </div>
                     <h3>Project name</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada. Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam, nec tristique libero turpis a nisl.</p>
+                    <p>Lorem dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada. Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam, nec tristique libero turpis a nisl.</p>
                     <a class="project__link" href="#">view</a>
                 </article>
             </section>
@@ -73,9 +75,18 @@
             <h2 class="contact__heading">Get in touch</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada.</p>
             <section class="contact__links">
-                    <a class="contact__link" href="#"><i class="far contact__icon fa-envelope"></i>madragoun@gmail.com</a>
-                    <a class="contact__link" href="#"><i class="fab contact__icon fa-github"></i>Github</a>
-                    <a class="contact__link" href="#"><i class="fab contact__icon fa-linkedin"></i>Linkedin</a>
+                    <a class="contact__link" href="#">
+                        <i class="far contact__icon fa-envelope"></i>
+                        <span class="contact__text">madragoun@gmail.com</span>
+                    </a>
+                    <a class="contact__link" href="#">
+                        <i class="contact__icon fab fa-github"></i>
+                        <span class="contact__text">Github</span>
+                    </a>
+                    <a class="contact__link" href="#">
+                        <i class="contact__icon fab fa-linkedin"></i>
+                        <span class="contact__text">LinkedIn</span>
+                    </a>
             </section>
         </footer>
         
