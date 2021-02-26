@@ -464,42 +464,9 @@ a:visited {
     color: #0F9797;
 }
 
-/* STACK ICONS */
-.stack__html,
-.stack__css,
-.stack__js {
-    font-size: 1.2rem;
-    margin-right: 0.6rem;
-}
-
-.stack__html {
-    color: #DC4D25;
-}
-
-.stack__css {
-    color: #156DB0;
-}
-
-.stack__js {
-    color: #E2C430;
-}
-
-.stack__text {
-    font-family:
-        'Dosis',
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        "Roboto",
-        "Helvetica Neue", Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    color: #5C5C5C;
-}
 
 /*********************************************************************
-    NAVIGATION
+NAVIGATION
 *********************************************************************/
 
 .navigation {
@@ -510,13 +477,13 @@ a:visited {
 
 .navigation__link {
     font-family:
-        'Dosis',
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        "Roboto",
-        "Helvetica Neue", Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    'Dosis',
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     text-transform: uppercase;
     font-size: 1.3rem;
     line-height: 1.3;
@@ -544,7 +511,7 @@ a:visited {
 }
 
 /*********************************************************************
-    HEADER 
+HEADER 
 *********************************************************************/
 
 .header {
@@ -582,11 +549,51 @@ a:visited {
 
 
 /*********************************************************************
-    ABOUT
+ABOUT
 *********************************************************************/
 .about__stack {
     color: #0F9797;
     list-style: none;
+    padding: inherit;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+/*********************************************************************
+    STACK ICONS
+*********************************************************************/
+.stack__html,
+.stack__css,
+.stack__js {
+    font-size: 1.2rem;
+    margin-right: 0.6rem;
+}
+
+.stack__html {
+    color: #DC4D25;
+}
+
+.stack__css {
+    color: #156DB0;
+}
+
+.stack__js {
+    color: #E2C430;
+}
+
+.stack__text {
+    font-family:
+        'Dosis',
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue", Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #5C5C5C;
 }
 
 /*********************************************************************
