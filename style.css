@@ -563,22 +563,20 @@ ABOUT
 /*********************************************************************
     STACK ICONS
 *********************************************************************/
-.stack__html,
-.stack__css,
-.stack__js {
+.stack__icon {
     font-size: 1.2rem;
     margin-right: 0.6rem;
 }
 
-.stack__html {
+.stack__icon--html {
     color: #DC4D25;
 }
 
-.stack__css {
+.stack__icon--css {
     color: #156DB0;
 }
 
-.stack__js {
+.stack__icon--js {
     color: #E2C430;
 }
 
