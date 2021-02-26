@@ -601,11 +601,15 @@ ABOUT
     margin-bottom: 2rem;
 }
 
+.project__preview {
+    position: relative;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
 .project__image {
-    /* todo: jak tu chytre zmenit veliksot, abych ji tam nemjusela psat natvrdo? */
     max-width: 100%;
     height: auto;
-    position: relative;
 }
 
 .project__stack {
