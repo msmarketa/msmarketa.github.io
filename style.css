@@ -415,7 +415,7 @@ h2 {
 
 h3 {
     font-family:
-        'Dosis',
+        "Dosis",
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
@@ -454,7 +454,6 @@ a:visited {
     MISC
 *********************************************************************/
 /* FONT AWESOME */
-
 .far,
 .fab {
     font-size: 2.5rem;
@@ -476,14 +475,11 @@ a:visited {
     border: 0;
 }
 
-
 /*********************************************************************
 HEADER
 *********************************************************************/
 .header__background {
-    /* todo: vlastne nevim, jak se mi to povedlo, proc to vlevo nezacina krajem obrazku pri 0rem, ale uz to je oriznute */
-    /* todo: zmenit velikost pro 320px */
-    background: no-repeat -1rem top/35% url('img/ellipse.svg');
+    background: no-repeat -1rem -22%/35% url('img/ellipse.svg');
 }
 
 /*********************************************************************
@@ -494,12 +490,13 @@ NAVIGATION
     display: flex;
     justify-content: flex-end;
     padding-top: 1rem;
+    flex-wrap: wrap;
 }
 
 .navigation__link {
     margin-right: 1rem;
     font-family:
-        'Dosis',
+        "Dosis",
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
@@ -587,6 +584,24 @@ ABOUT
     margin-right: auto;
 }
 
+/* GRADIENT */
+.gradient {
+    position: relative;
+}
+
+.gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), linear-gradient(223.13deg, rgba(15, 151, 151, 0.5) 14.59%, rgba(147, 190, 255, 0.5) 85.74%);
+    border-radius: 50%;
+    width: 250px;
+    z-index: 1;
+}
+
 .about__stack {
     color: #0F9797;
     list-style: none;
@@ -618,7 +633,7 @@ ABOUT
 
 .stack__text {
     font-family:
-        'Dosis',
+        "Dosis",
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
@@ -663,7 +678,7 @@ ABOUT
 
 .project__stack {
     font-family:
-        'Dosis',
+        "Dosis",
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
