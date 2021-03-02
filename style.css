@@ -543,7 +543,7 @@ HEADER
     width: min-content;
 }
 
-.header__about {
+.header__perex {
     font-size: 1.3rem;
     line-height: 1.4;
     letter-spacing: 0.05em;
