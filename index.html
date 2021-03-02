@@ -36,9 +36,9 @@
         <main class="content">
             <section id="about">
                 <h2><span class="text--green">About</span> me</h2>
-                <img class="about__photo img--circular" src="../img/profile.jpg" alt="Marketa Andreev Dragoun">
+                <img class="about__photo" src="/img/profile.jpg" alt="Marketa Andreev Dragoun">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada. Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam, nec tristique libero turpis a nisl. Sed sed mauris et <a href="#todo">purus varius varius</a> nec iaculis purus. Aenean consequat dictum cursus. Donec at arcu interdum, tempor libero mattis, iaculis lorem. </p>
-                <h3 class="text--hidden">Tech stack:</h3>
+                <h3 class="sr-only">Tech stack:</h3>
                 <ul class="about__stack">
                     <li class="stack__text"><i class="stack__icon stack__icon--html fab fa-html5"></i>HTML</li>
                     <li class="stack__text"><i class="stack__icon stack__icon--css fab fa-css3-alt"></i>CSS</li>
@@ -46,18 +46,17 @@
                 </ul>
             </section>
     
-            <!-- todo: asi neni potreba cela velka sekce -->
             <section id="projects">
                 <h2>Latest <span class="text--green">projects</span></h2>
                 <article class="project project--left">
                     <div class="project__preview">
-                        <img class="project__image" src="../img/yasashii_profile.jpg" alt="Project Name">
-                        <span class="project__stack">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Bootstrap</li>
-                        </span>
+                        <img class="project__image" src="/img/yasashii_profile.jpg" alt="Project Name">
+                        <ul class="project__stack">
+                            <li class="project__item">HTML</li>
+                            <li class="project__item">CSS</li>
+                            <li class="project__item">JavaScript</li>
+                            <li class="project__item">Bootstrap</li>
+                        </ul>
                     </div>
                     <h3>Project name</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada. Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam, nec tristique libero turpis a nisl.</p>
@@ -66,11 +65,11 @@
 
                 <article class="project project--right">
                     <div class="project__preview">
-                        <img class="project__image" src="../img/yasashii.jpg" alt="Project Name">
+                        <img class="project__image" src="/img/yasashii.jpg" alt="Project Name">
                         <ul class="project__stack">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
+                            <li class="project__item">HTML</li>
+                            <li class="project__item">CSS</li>
+                            <li class="project__item">JavaScript</li>
                         </ul>
                     </div>
                     <h3>Project name</h3>
