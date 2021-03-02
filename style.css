@@ -465,9 +465,25 @@ a:visited {
 }
 
 .text--hidden {
-    display: non;
+    display: none;
 }
 
+.img--circular {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/*********************************************************************
+HEADER
+*********************************************************************/
+.header__background {
+    /* todo: vlastne nevim, jak se mi to povedlo, proc to vlevo nezacina krajem obrazku pri 0rem, ale uz to je oriznute */
+    /* todo: zmenit velikost pro 320px */
+    background: no-repeat -1rem top/35% url('img/ellipse.svg');
+}
 
 /*********************************************************************
 NAVIGATION
@@ -476,7 +492,7 @@ NAVIGATION
 .navigation {
     display: flex;
     justify-content: flex-end;
-    margin-top: 1rem;
+    padding-top: 1rem;
 }
 
 .navigation__link {
@@ -556,6 +572,11 @@ HEADER
 /*********************************************************************
 ABOUT
 *********************************************************************/
+.about__photo {
+    object-fit: cover;
+    filter: grayscale(1) brightness(1.2);
+}
+
 .about__stack {
     color: #0F9797;
     list-style: none;
