@@ -415,7 +415,7 @@ h2 {
 
 h3 {
     font-family:
-        'Dosis',
+        "Dosis",
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
@@ -454,7 +454,6 @@ a:visited {
     MISC
 *********************************************************************/
 /* FONT AWESOME */
-
 .far,
 .fab {
     font-size: 2.5rem;
@@ -464,10 +463,24 @@ a:visited {
     color: #0F9797;
 }
 
-.text--hidden {
-    display: non;
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
 }
 
+/*********************************************************************
+HEADER
+*********************************************************************/
+.header {
+    background: no-repeat -1rem -22%/35% url('img/ellipse.svg');
+}
 
 /*********************************************************************
 NAVIGATION
@@ -476,13 +489,14 @@ NAVIGATION
 .navigation {
     display: flex;
     justify-content: flex-end;
-    margin-top: 1rem;
+    padding-top: 1rem;
+    flex-wrap: wrap;
 }
 
 .navigation__link {
     margin-right: 1rem;
     font-family:
-        'Dosis',
+        "Dosis",
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
@@ -519,7 +533,7 @@ NAVIGATION
 HEADER 
 *********************************************************************/
 
-.header {
+.header__about {
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -529,7 +543,7 @@ HEADER
     width: min-content;
 }
 
-.header__about {
+.header__perex {
     font-size: 1.3rem;
     line-height: 1.4;
     letter-spacing: 0.05em;
@@ -556,6 +570,48 @@ HEADER
 /*********************************************************************
 ABOUT
 *********************************************************************/
+/* GRADIENT */
+.about__gradient {
+    position: relative;
+    width: 50%;
+    height: 0;
+    padding-bottom: 50%;
+    float: right;
+}
+
+.about__gradient::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), linear-gradient(223.13deg, rgba(15, 151, 151, 0.5) 14.59%, rgba(147, 190, 255, 0.5) 85.74%);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.about__photo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: 40%;
+    filter: grayscale(1) brightness(1.2);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.about__decoration {
+    position: absolute;
+    left: 10%;
+    top: -10%;
+    width: 25%;
+}
+
+
 .about__stack {
     color: #0F9797;
     list-style: none;
@@ -587,7 +643,7 @@ ABOUT
 
 .stack__text {
     font-family:
-        'Dosis',
+        "Dosis",
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
@@ -607,22 +663,52 @@ ABOUT
 }
 
 .project__preview {
+    /* todo: proc je height vyssi, nez u project__image? */
     position: relative;
     margin-left: -1rem;
     margin-right: -1rem;
 }
 
+.project__preview::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(15, 151, 151, 0.1) 50%, rgba(15, 151, 151, 0.8));
+}
+
 .project__image {
     max-width: 100%;
     height: auto;
+    box-shadow: 2px 8px 20px rgba(92, 92, 92, 0.3);
+    display: block;
 }
 
 .project__stack {
+    font-family:
+        "Dosis",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue", Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #E5E5E5;
+    padding: 0;
+    margin: 0;
+    list-style: none;
     font-size: 0.75rem;
-    line-height: 2.6;
+    line-height: 1;
     position: absolute;
     left: 1rem;
     bottom: 1rem;
+}
+
+.project__item {
+    display: inline;
+    margin-right: 1.125rem;
 }
 
 .project__link {
@@ -642,7 +728,8 @@ ABOUT
     background-color: #0F9797;
     color: #C3FFFF;
     padding-bottom: 2rem;
-    clip-path: ellipse(100% 100% at 50% 100%);
+    /* todo: zkusit calc nebo clamp() */
+    clip-path: ellipse(120% 100% at 50% 100%);
 }
 
 /*********************************************************************
