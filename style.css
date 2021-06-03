@@ -502,7 +502,11 @@ NAVIGATION
     text-decoration: none;
     border: none;
     color: #000;
-    text-shadow: -1px -1px 3px #e5e5e5, 1px 1px 3px #e5e5e5;
+    text-shadow: 
+        -1px -1px 0 rgb(255 255 255 / 100%), 
+        -1px 1px 0 rgb(255 255 255 / 100%), 
+        1px -1px 0 rgb(255 255 255 / 100%), 
+        1px 1px 0 rgb(255 255 255 / 100%);
     display: block;
 }
 
@@ -526,20 +530,29 @@ NAVIGATION
 /*********************************************************************
 HEADER 
 *********************************************************************/
+.header__container {
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header {
     background-image: url('img/ellipse.svg');
     background-size: 12rem;
     background-repeat: no-repeat;
-    background-position: left -2rem top -8rem;
+    background-position: 0 -8rem;
 }
 
 .header__about {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    max-width: 70rem;
 }
 
 .header__heading {
@@ -554,7 +567,7 @@ HEADER
 }
 
 .header__perex {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 1.4;
     letter-spacing: 0.05em;
 }
