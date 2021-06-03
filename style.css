@@ -502,7 +502,11 @@ NAVIGATION
     text-decoration: none;
     border: none;
     color: #000;
-    text-shadow: -1px -1px 3px #fff, 1px 1px 3px #fff;
+    text-shadow: 
+        -1px -1px 0 rgb(255 255 255 / 100%), 
+        -1px 1px 0 rgb(255 255 255 / 100%), 
+        1px -1px 0 rgb(255 255 255 / 100%), 
+        1px 1px 0 rgb(255 255 255 / 100%);
     display: block;
 }
 
@@ -536,7 +540,7 @@ HEADER
     background-image: url('img/ellipse.svg');
     background-size: 12rem;
     background-repeat: no-repeat;
-    background-position: left 0 top -8rem;
+    background-position: 0 -8rem;
 }
 
 .header__about {
