@@ -36,20 +36,25 @@
             </header>
         </div>
         
+        
         <main class="content">
-            <section id="about">
-                <h2><span class="text--green">About</span> me</h2>
-                <div class="about__gradient">
-                    <img class="about__photo" src="/img/profile.jpg" alt="Marketa Andreev Dragoun">
-                    <img class="about__decoration" src="/img/ellipse.svg" alt="">
+            <section class="profile__gradient">
+                <img class="profile__photo" src="/img/profile.jpg" alt="Marketa Andreev Dragoun">
+                <img class="profile__decoration" src="/img/ellipse.svg" alt="">
+            </section>
+            <section id="about" class="about">
+                <div class="about__description">
+                    <h2><span class="text--green">About</span> me</h2>
+                    <div class="about__description__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada. Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam, nec tristique libero turpis a nisl. Sed sed mauris et <a href="#todo">purus varius varius</a> nec iaculis purus. Aenean consequat dictum cursus. Donec at arcu interdum, tempor libero mattis, iaculis lorem. </p>
+                        <h3 class="sr-only">Tech stack:</h3>
+                        <ul class="about__stack">
+                            <li class="stack__text"><i class="stack__icon stack__icon--html fab fa-html5"></i>HTML</li>
+                            <li class="stack__text"><i class="stack__icon stack__icon--css fab fa-css3-alt"></i>CSS</li>
+                            <li class="stack__text"><i class="stack__icon stack__icon--js fab fa-js-square"></i>JavaScript</li>
+                        </ul>
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada. Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam, nec tristique libero turpis a nisl. Sed sed mauris et <a href="#todo">purus varius varius</a> nec iaculis purus. Aenean consequat dictum cursus. Donec at arcu interdum, tempor libero mattis, iaculis lorem. </p>
-                <h3 class="sr-only">Tech stack:</h3>
-                <ul class="about__stack">
-                    <li class="stack__text"><i class="stack__icon stack__icon--html fab fa-html5"></i>HTML</li>
-                    <li class="stack__text"><i class="stack__icon stack__icon--css fab fa-css3-alt"></i>CSS</li>
-                    <li class="stack__text"><i class="stack__icon stack__icon--js fab fa-js-square"></i>JavaScript</li>
-                </ul>
             </section>
     
             <section id="projects">
