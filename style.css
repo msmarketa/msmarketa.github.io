@@ -445,10 +445,13 @@ a:visited {
     color: #8BDCDC;
 }
 
+::selection {
+    background: #8BDCDC; /* WebKit/Blink Browsers */
+}
+
 .content {
     margin-left: 1rem;
     margin-right: 1rem;
-    max-width: 55rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -483,7 +486,6 @@ a:visited {
     border: 0;
 }
 /*********************************************************************
-
 NAVIGATION
 *********************************************************************/
 
@@ -602,21 +604,24 @@ HEADER
 ABOUT
 *********************************************************************/
 /* PROFILE PHOTO */
+.profile {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 45rem;
+    margin-top: 5rem;
+    max-width: 2080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .profile__gradient {
     position: absolute;
+    top: 4rem;
+    left: min(100% - 35rem, 1440px);
     width: 40rem;
     height: 0;
     padding-bottom: 40rem;
-    float: right;
-    right: -10rem;
-    margin-top: -2rem;
-}
-
-@media screen and (min-width: 1440px) {
-    .profile__gradient {
-        right: auto;
-        margin-top: -2rem;
-    }
 }
 
 .profile__gradient::before {
@@ -651,9 +656,12 @@ ABOUT
     width: 25%;
 }
 
-/* ABOUT SECTION */
+/* ABOUT DESCRIPTION */
 .about {
-    margin-top: 10rem;
+    margin-top: 8rem;
+    max-width: 55rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about__description {
@@ -713,6 +721,16 @@ ABOUT
 /*********************************************************************
     PROJECTS
 *********************************************************************/
+.projects {
+    max-width: 55rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects__heading {
+    text-align: center;
+}
+
 .project {
     margin-bottom: 2rem;
 }

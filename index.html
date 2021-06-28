@@ -37,28 +37,31 @@
         </div>
         
         
+        
         <main class="content">
-            <section class="profile__gradient">
-                <img class="profile__photo" src="/img/profile.jpg" alt="Marketa Andreev Dragoun">
-                <img class="profile__decoration" src="/img/ellipse.svg" alt="">
-            </section>
-            <section id="about" class="about">
-                <div class="about__description">
-                    <h2><span class="text--green">About</span> me</h2>
-                    <div class="about__description__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada. Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam, nec tristique libero turpis a nisl. Sed sed mauris et <a href="#todo">purus varius varius</a> nec iaculis purus. Aenean consequat dictum cursus. Donec at arcu interdum, tempor libero mattis, iaculis lorem. </p>
-                        <h3 class="sr-only">Tech stack:</h3>
-                        <ul class="about__stack">
-                            <li class="stack__text"><i class="stack__icon stack__icon--html fab fa-html5"></i>HTML</li>
-                            <li class="stack__text"><i class="stack__icon stack__icon--css fab fa-css3-alt"></i>CSS</li>
-                            <li class="stack__text"><i class="stack__icon stack__icon--js fab fa-js-square"></i>JavaScript</li>
-                        </ul>
+            <section class="profile">
+                <div class="about">
+                    <div class="about__description">
+                        <h2><span class="text--green">About</span> me</h2>
+                        <div class="about__description__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada. Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam, nec tristique libero turpis a nisl. Sed sed mauris et <a href="#todo">purus varius varius</a> nec iaculis purus. Aenean consequat dictum cursus. Donec at arcu interdum, tempor libero mattis, iaculis lorem. </p>
+                            <h3 class="sr-only">Tech stack:</h3>
+                            <ul class="about__stack">
+                                <li class="stack__text"><i class="stack__icon stack__icon--html fab fa-html5"></i>HTML</li>
+                                <li class="stack__text"><i class="stack__icon stack__icon--css fab fa-css3-alt"></i>CSS</li>
+                                <li class="stack__text"><i class="stack__icon stack__icon--js fab fa-js-square"></i>JavaScript</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <div class="profile__gradient">
+                    <img class="profile__photo" src="/img/profile.jpg" alt="Marketa Andreev Dragoun">
+                    <img class="profile__decoration" src="/img/ellipse.svg" alt="">
+                </div>
             </section>
-    
-            <section id="projects">
-                <h2>Latest <span class="text--green">projects</span></h2>
+
+            <section id="projects" class="projects">
+                <h2 class="projects__heading">Latest <span class="text--green">projects</span></h2>
                 <article class="project project--left">
                     <div class="project__preview">
                         <img class="project__image" src="/img/yasashii_profile.jpg" alt="Project Name">
@@ -94,11 +97,11 @@
             <h2 class="contact__heading">Get in touch</h2>
             <p class="contact__detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada.</p>
             <section class="contact__links">
-                    <a class="contact__link" href="#">
+                    <a class="contact__link" href="mailto:madragoun@gmail.com">
                         <i class="far contact__icon fa-envelope"></i>
                         <span class="contact__text">madragoun@gmail.com</span>
                     </a>
-                    <a class="contact__link" href="#">
+                    <a class="contact__link" href="https://github.com/msmarketa/">
                         <i class="contact__icon fab fa-github"></i>
                         <span class="contact__text">Github</span>
                     </a>
