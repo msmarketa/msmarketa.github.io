@@ -605,23 +605,48 @@ ABOUT
 *********************************************************************/
 /* PROFILE PHOTO */
 .profile {
-    position: relative;
-    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    height: 45rem;
     margin-top: 5rem;
-    max-width: 2080px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .profile__gradient {
-    position: absolute;
+    position: relative;
+    flex-shrink: 0;
     top: 4rem;
-    left: min(100% - 35rem, 1440px);
-    width: 40rem;
+    width: 25rem;
     height: 0;
-    padding-bottom: 40rem;
+    padding-bottom: 25rem;
+    margin-left: 3rem;
+}
+
+@media screen and (min-width: 1020px) {
+    .profile {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        height: 45rem;
+        max-width: 2080px;
+    }
+
+    .profile__gradient {
+        position: absolute;
+        left: min(100% - 25rem, 1440px);
+        width: 30rem;
+        padding-bottom: 30rem;
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .profile__gradient {
+        left: min(100% - 35rem, 1440px);
+        width: 40rem;
+        padding-bottom: 40rem;
+    }
 }
 
 .profile__gradient::before {
@@ -658,22 +683,16 @@ ABOUT
 
 /* ABOUT DESCRIPTION */
 .about {
-    margin-top: 8rem;
-    max-width: 55rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 3%;
 }
 
 .about__description {
-    max-width: 30rem;
     margin-left: 1rem;
 }
 
 .about__description__text {
-    margin-left: 4rem;
+    margin-left: 1rem;
 }
-
-
 
 .about__stack {
     color: #0F9797;
@@ -684,6 +703,22 @@ ABOUT
     margin-bottom: 2rem;
 }
 
+@media screen and (min-width: 1020px) {
+    .about {
+        margin-top: 8rem;
+        max-width: 55rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about__description {
+        max-width: 30rem;
+    }
+
+    .about__description__text {
+        margin-left: 4rem;
+    }
+}
 /*********************************************************************
     STACK ICONS
 *********************************************************************/
