@@ -474,10 +474,6 @@ a:visited {
     color: #0F9797;
 }
 
-.text--centered {
-    text-align: center;
-}
-
 .sr-only {
     position: absolute;
     width: 1px;
@@ -625,49 +621,6 @@ ABOUT
     padding-bottom: 15rem;
 }
 
-@media screen and (min-width: 769px) {
-    .profile {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .profile__gradient {
-        top: 4rem;
-        width: 25rem;
-        align-self: auto;
-        padding-bottom: 25rem;
-        margin-left: 3rem;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .profile {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        overflow: hidden;
-        height: 45rem;
-        max-width: 2080px;
-    }
-
-    .profile__gradient {
-        position: absolute;
-        left: min(100% - 25rem, 1440px);
-        width: 30rem;
-        padding-bottom: 30rem;
-        margin-left: auto;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .profile__gradient {
-        left: min(100% - 35rem, 1440px);
-        width: 40rem;
-        padding-bottom: 40rem;
-    }
-}
-
 .profile__gradient::before {
     content: '';
     position: absolute;
@@ -700,12 +653,68 @@ ABOUT
     width: 25%;
 }
 
+@media screen and (min-width: 425px) {
+    .profile {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .profile {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 35rem;
+    }
+
+    .profile__gradient {
+        top: 4rem;
+        width: 20rem;
+        align-self: auto;
+        padding-bottom: 20rem;
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .profile {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        height: 35rem;
+        max-width: 2080px;
+    }
+
+    .profile__gradient {
+        position: absolute;
+        left: min(100% - 25rem, 1440px);
+        width: 30rem;
+        padding-bottom: 30rem;
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .profile {
+        height: 45rem;
+    }
+
+    .profile__gradient {
+        left: min(100% - 35rem, 1440px);
+        width: 40rem;
+        padding-bottom: 40rem;
+    }
+}
+
 /* ABOUT DESCRIPTION */
 .about {
     margin-top: 3%;
 }
 
-.about__description__heading {
+.about__heading {
     text-align: center;
 }
 
@@ -723,7 +732,7 @@ ABOUT
         margin-left: 1rem;
     }
 
-    .about__description__heading {
+    .about__heading {
         text-align: left;
     }
 
@@ -791,6 +800,10 @@ ABOUT
     margin-right: auto;
 }
 
+.projects__heading {
+    text-align: center;
+}
+
 .project {
     margin-bottom: 2rem;
 }
@@ -850,6 +863,88 @@ ABOUT
 
 .project__link::after {
     content: " ››";
+}
+
+@media screen and (min-width: 425px) {
+    .project {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project__preview {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .project__image,
+    .project__preview::before {
+        border-radius: 8px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .project {
+        display: flex;
+        align-items: center;
+        max-width: 80%;
+        margin-bottom: 4rem;
+    }
+
+    .project:first-of-type {
+        margin-top: 4rem;
+    }
+
+    .project:last-of-type {
+        margin-bottom: 8rem;
+    }
+
+    .project--left {
+        flex-direction: row;
+    }
+
+    .project--right {
+        flex-direction: row-reverse;
+    }
+
+    .project__description--right {
+        margin-left: 3rem;
+    }
+
+    .project__description--left {
+        margin-right: 3rem;
+    }
+
+    .project__image {
+        max-width: 20rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .project {
+        margin-bottom: 6rem;
+        max-width: 100%;
+    }
+
+    .project:first-of-type {
+        margin-top: 6rem;
+    }
+
+    .project:last-of-type {
+        margin-bottom: 12rem;
+    }
+
+    .project__description--right {
+        margin-left: 5rem;
+    }
+
+    .project__description--left {
+        margin-right: 5rem;
+    }
+
+    .project__image {
+        max-width: 30rem;
+    }
 }
 
 /*********************************************************************
