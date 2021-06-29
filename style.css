@@ -410,7 +410,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.6rem;
 }
 
 h3 {
@@ -445,9 +445,20 @@ a:visited {
     color: #8BDCDC;
 }
 
+::selection {
+    background: #8BDCDC; /* WebKit/Blink Browsers */
+}
+
 .content {
     margin-left: 1rem;
     margin-right: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .content {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /*********************************************************************
@@ -463,6 +474,10 @@ a:visited {
     color: #0F9797;
 }
 
+.text--centered {
+    text-align: center;
+}
+
 .sr-only {
     position: absolute;
     width: 1px;
@@ -475,7 +490,6 @@ a:visited {
     border: 0;
 }
 /*********************************************************************
-
 NAVIGATION
 *********************************************************************/
 
@@ -593,16 +607,68 @@ HEADER
 /*********************************************************************
 ABOUT
 *********************************************************************/
-/* GRADIENT */
-.about__gradient {
-    position: relative;
-    width: 50%;
-    height: 0;
-    padding-bottom: 50%;
-    float: right;
+/* PROFILE PHOTO */
+.profile {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin-top: 5rem;
 }
 
-.about__gradient::before {
+.profile__gradient {
+    position: relative;
+    flex-shrink: 0;
+    align-self: center;
+    top: 2rem;
+    width: 15rem;
+    height: 0;
+    padding-bottom: 15rem;
+}
+
+@media screen and (min-width: 769px) {
+    .profile {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .profile__gradient {
+        top: 4rem;
+        width: 25rem;
+        align-self: auto;
+        padding-bottom: 25rem;
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .profile {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        height: 45rem;
+        max-width: 2080px;
+    }
+
+    .profile__gradient {
+        position: absolute;
+        left: min(100% - 25rem, 1440px);
+        width: 30rem;
+        padding-bottom: 30rem;
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .profile__gradient {
+        left: min(100% - 35rem, 1440px);
+        width: 40rem;
+        padding-bottom: 40rem;
+    }
+}
+
+.profile__gradient::before {
     content: '';
     position: absolute;
     display: block;
@@ -615,7 +681,7 @@ ABOUT
     z-index: 2;
 }
 
-.about__photo {
+.profile__photo {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -627,13 +693,21 @@ ABOUT
     z-index: 1;
 }
 
-.about__decoration {
+.profile__decoration {
     position: absolute;
     left: 10%;
     top: -10%;
     width: 25%;
 }
 
+/* ABOUT DESCRIPTION */
+.about {
+    margin-top: 3%;
+}
+
+.about__description__heading {
+    text-align: center;
+}
 
 .about__stack {
     color: #0F9797;
@@ -644,6 +718,36 @@ ABOUT
     margin-bottom: 2rem;
 }
 
+@media screen and (min-width: 769px) {
+    .about__description {
+        margin-left: 1rem;
+    }
+
+    .about__description__heading {
+        text-align: left;
+    }
+
+    .about__description__text {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about {
+        margin-top: 8rem;
+        max-width: 55rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about__description {
+        max-width: 30rem;
+    }
+
+    .about__description__text {
+        margin-left: 4rem;
+    }
+}
 /*********************************************************************
     STACK ICONS
 *********************************************************************/
@@ -681,6 +785,12 @@ ABOUT
 /*********************************************************************
     PROJECTS
 *********************************************************************/
+.projects {
+    max-width: 55rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .project {
     margin-bottom: 2rem;
 }
