@@ -718,15 +718,6 @@ ABOUT
     text-align: center;
 }
 
-.about__stack {
-    color: #0F9797;
-    list-style: none;
-    padding: inherit;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-}
-
 @media screen and (min-width: 769px) {
     .about__description {
         margin-left: 1rem;
@@ -758,8 +749,17 @@ ABOUT
     }
 }
 /*********************************************************************
-    STACK ICONS
+    STACK
 *********************************************************************/
+.stack {
+    color: #0F9797;
+    list-style: none;
+    padding: inherit;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
 .stack__icon {
     font-size: 1.2rem;
     margin-right: 0.6rem;
@@ -809,7 +809,6 @@ ABOUT
 }
 
 .project__preview {
-    /* todo: proc je height vyssi, nez u project__image? */
     position: relative;
     margin-left: -1rem;
     margin-right: -1rem;
@@ -832,7 +831,7 @@ ABOUT
     display: block;
 }
 
-.project__stack {
+.project__technologies {
     font-family:
         "Dosis",
         -apple-system,
@@ -852,7 +851,7 @@ ABOUT
     bottom: 1rem;
 }
 
-.project__item {
+.project__technology {
     display: inline;
     margin-right: 1.125rem;
 }
@@ -884,10 +883,24 @@ ABOUT
 }
 
 @media screen and (min-width: 769px) {
+    .projects {
+        margin-top: -2rem;
+        position: relative;
+    }
+
+    .projects::before {
+        content: '';
+        position: absolute;
+        top: 0rem;
+        left: -10rem;
+        width: 15rem;
+        height: 15rem;
+        background-image: url(img/ellipse.svg);
+    }
+
     .project {
         display: flex;
         align-items: center;
-        max-width: 80%;
         margin-bottom: 4rem;
     }
 
@@ -899,20 +912,13 @@ ABOUT
         margin-bottom: 8rem;
     }
 
-    .project--left {
-        flex-direction: row;
-    }
-
-    .project--right {
-        flex-direction: row-reverse;
-    }
-
     .project__description--right {
         margin-left: 3rem;
     }
 
     .project__description--left {
         margin-right: 3rem;
+        order: -1;
     }
 
     .project__image {
@@ -921,6 +927,17 @@ ABOUT
 }
 
 @media screen and (min-width: 1024px) {
+    .projects {
+        margin-top: 0;
+    }
+    
+    .projects::before {
+        top: -5rem;
+        left: -25rem;
+        width: 20rem;
+        height: 20rem;
+    }
+
     .project {
         margin-bottom: 6rem;
         max-width: 100%;
@@ -944,6 +961,20 @@ ABOUT
 
     .project__image {
         max-width: 30rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .projects {
+        margin-top: -5rem;
+    }
+
+    .projects::before {
+        top: -5rem;
+        left: -30rem;
+        width: 25rem;
+        height: 25rem;
+        background-size: 25rem;
     }
 }
 
