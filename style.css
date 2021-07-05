@@ -485,6 +485,23 @@ a:visited {
     white-space: nowrap;
     border: 0;
 }
+
+@keyframes movement {
+    0% { transform: translate(0, 0px); }
+    20% { transform: translate(10px, -10px); }
+    40% { transform: translate(5px, 10px); }
+    60% { transform: translate(-10px, -10px); }
+    80% { transform: translate(-15px, 10px); }
+  }
+
+.fadein {
+animation: fadein 1s ease-in;
+}
+
+@keyframes fadein {
+from { transform: translateY(3rem); opacity: 0.5 }
+to { transform: translateY(0); opacity: 1;}
+}
 /*********************************************************************
 NAVIGATION
 *********************************************************************/
@@ -651,6 +668,7 @@ ABOUT
     left: 10%;
     top: -10%;
     width: 25%;
+    animation: movement 10s ease-in-out infinite;
 }
 
 @media screen and (min-width: 425px) {
@@ -669,7 +687,7 @@ ABOUT
     }
 
     .profile__gradient {
-        top: 4rem;
+        top: 5rem;
         width: 20rem;
         align-self: auto;
         padding-bottom: 20rem;
@@ -896,6 +914,7 @@ ABOUT
         width: 15rem;
         height: 15rem;
         background-image: url(img/ellipse.svg);
+        animation: movement 15s ease-in-out infinite;
     }
 
     .project {
