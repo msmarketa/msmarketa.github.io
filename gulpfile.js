@@ -10,6 +10,7 @@ gulp.task('serve', () => {
 
     gulp.watch('*.html').on('change', bsync.reload);
     gulp.watch('*.css').on('change', bsync.reload);
+    gulp.watch('*.js').on('change', bsync.reload);
 })
 
 gulp.task('default', gulp.task('serve'));
