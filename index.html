@@ -17,7 +17,7 @@
 
             <header class="header">
                 <nav class="navigation">
-                    <a class="navigation__link" href="#about">About</a>
+                    <a class="navigation__link" href="#profile">About</a>
                     <a class="navigation__link" href="#projects">Projects</a>
                     <a class="navigation__link" href="#contact">Contact</a>
                 </nav>
@@ -37,7 +37,7 @@
         </div>
         
         <main class="content">
-            <section class="profile">
+            <section class="profile" id="profile">
                 <div class="about">
                     <div class="about__description">
                         <h2 class="about__heading"><span class="text--green">About</span> me</h2>
@@ -53,7 +53,20 @@
                     </div>
                 </div>
                 <div class="profile__gradient">
-                    <img class="profile__photo" src="/img/profile.jpg" alt="Marketa Andreev Dragoun">
+                    <picture>
+                        <img
+                        class="profile__photo"
+                        sizes="(max-width: 1280px) 100vw, 1280px"
+                        srcset="
+                            /img/profile_jlnoaf_c_scale,w_240.jpg 240w,
+                            /img/profile_jlnoaf_c_scale,w_576.jpg 576w,
+                            /img/profile_jlnoaf_c_scale,w_824.jpg 824w,
+                            /img/profile_jlnoaf_c_scale,w_1004.jpg 1004w,
+                            /img/profile_jlnoaf_c_scale,w_1142.jpg 1142w,
+                            /img/profile_jlnoaf_c_scale,w_1280.jpg 1280w"
+                        src="/img/profile_jlnoaf_c_scale,w_1280.jpg"
+                        alt="Marketa Andreev Dragoun">
+                    </picture>
                     <img class="profile__decoration" src="/img/ellipse.svg" alt="">
                 </div>
             </section>
