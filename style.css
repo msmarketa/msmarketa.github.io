@@ -427,9 +427,9 @@ h3 {
 }
 
 a {
-    color: #0F9797;
+    color: #077777;
     text-decoration: none;
-    border-bottom: 1px solid #0F9797;
+    border-bottom: 1px solid #077777;
     transition: all 250ms ease;
 }
 
@@ -439,9 +439,12 @@ a:hover {
     transition: all 250ms ease;
 }
 
-a:hover,
-a:active,
 a:visited {
+    color: #077777;
+}
+
+a:hover,
+a:active {
     color: #8BDCDC;
 }
 
@@ -561,13 +564,20 @@ HEADER
     max-width: 75rem;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
-.header {
-    background-image: url('img/ellipse.svg');
-    background-size: 12rem;
-    background-repeat: no-repeat;
-    background-position: 0 -8rem;
+.header__container::before {
+    content: '';
+    position: absolute;
+    top: -8rem;
+    left: -1rem;
+    width: 12rem;
+    height: 12rem;
+    background-color: #0F9797;
+    border-radius: 50%;
+    animation: movement 30s ease-in-out infinite;
+    z-index: -1;
 }
 
 .header__about {
@@ -1056,6 +1066,7 @@ ABOUT
     display: flex;
     align-items: center;
     margin-bottom: 0.6rem;
+    border-bottom: none;
 }
 
 .contact__text {
@@ -1069,6 +1080,7 @@ ABOUT
 
 .contact__link:hover {
     text-decoration: none;
+    border-bottom: none;
 }
 
 .contact__icon {
