@@ -460,13 +460,12 @@ a {
     color: #077777;
     text-decoration: none;
     border-bottom: 1px solid #077777;
-    transition: all 250ms ease;
+    transition: border-bottom, color 250ms ease;
 }
 
 a:hover {
     /* todo: animate underline */
     border-bottom: 1px solid transparent;
-    transition: all 250ms ease;
 }
 
 a:visited {
@@ -690,12 +689,11 @@ HEADER
 .header__icon {
     padding-right: 1rem;
     color: #0F9797;
-    transition: all 250ms ease;
+    transition: color 250ms ease;
 }
 
 .header__icon:hover {
     color: #8BDCDC;
-    transition: all 250ms ease;
 }
 
 
@@ -790,7 +788,7 @@ ABOUT
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), linear-gradient(223.13deg, rgba(15, 151, 151, 0.5) 14.59%, rgba(147, 190, 255, 0.5) 85.74%);
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), linear-gradient(225deg, rgba(15, 151, 151, 0.5) 15%, rgba(147, 190, 255, 0.5) 85%);
     border-radius: 50%;
     z-index: 2;
 }
