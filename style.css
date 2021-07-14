@@ -481,6 +481,11 @@ a:active {
     background: #8BDCDC;
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .container--wide {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -495,8 +500,6 @@ a:active {
 
 .container--narrow {
     max-width: 75rem;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* HEADINGS */
@@ -512,7 +515,7 @@ a:active {
     color: #E2FFFF;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .heading--left {
         text-align: left;
     }
@@ -716,11 +719,11 @@ ABOUT
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .profile {
         flex-direction: row;
         justify-content: space-between;
-        height: 35rem;
+        max-height: 35rem;
     }
 }
 
@@ -730,7 +733,7 @@ ABOUT
         margin-left: auto;
         margin-right: auto;
         position: relative;
-        overflow: hidden;
+        display: flow-root;
         height: 35rem;
         max-width: 2080px;
     }
@@ -752,7 +755,7 @@ ABOUT
     padding-bottom: 15rem;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .profile__gradient {
         top: 5rem;
         width: 20rem;
@@ -805,7 +808,7 @@ ABOUT
     animation: movement 18s ease-in-out infinite;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .profile__gradient::after {
         left: 2rem;
         top: -2rem;
@@ -852,7 +855,7 @@ ABOUT
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .profile__description {
         margin-left: 1rem;
     }
@@ -924,26 +927,14 @@ ABOUT
     margin-right: auto;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .projects {
-        margin-top: -2rem;
+        margin-top: 5rem;
         position: relative;
     }
 }
 
-@media screen and (min-width: 1024px) {
-    .projects {
-        margin-top: 0;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .projects {
-        margin-top: -5rem;
-    }
-}
-
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .projects::before {
         content: '';
         position: absolute;
@@ -988,7 +979,7 @@ ABOUT
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .project {
         display: flex;
         align-items: center;
@@ -1019,7 +1010,7 @@ ABOUT
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .project__description--right {
         margin-left: 3rem;
     }
@@ -1082,7 +1073,7 @@ ABOUT
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .project__image {
         max-width: 20rem;
     }
@@ -1134,10 +1125,7 @@ ABOUT
     text-align: center;
     background-color: #0F9797;
     color: #C3FFFF;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 2rem 1rem;
     clip-path: ellipse(120% 100% at 50% 100%);
 }
 
