@@ -421,10 +421,9 @@ html {
 }
 
 body {
-    /* font-size: 1.125rem; */
     font-size: 1rem;
     line-height: 1.8;
-    color: #5C5C5C;
+    color: #5c5c5c;
 }
 
 h1,
@@ -474,11 +473,11 @@ a:visited {
 
 a:hover,
 a:active {
-    color: #8BDCDC;
+    color: #8bdcdc;
 }
 
 ::selection {
-    background: #8BDCDC;
+    background: #8bdcdc;
 }
 
 .container {
@@ -508,11 +507,11 @@ a:active {
 }
 
 .heading__highlight {
-    color: #0F9797;
+    color: #0f9797;
 }
 
 .heading--light {
-    color: #E2FFFF;
+    color: #e2ffff;
 }
 
 @media screen and (min-width: 768px) {
@@ -573,7 +572,7 @@ a:active {
 @keyframes fadein {
     from {
         transform: translateY(3rem);
-        opacity: 0.5
+        opacity: 0.5;
     }
 
     to {
@@ -617,7 +616,7 @@ NAVIGATION
 }
 
 .navigation__link::first-letter {
-    color: #0F9797;
+    color: #0f9797;
 }
 
 .navigation__link:active,
@@ -630,7 +629,7 @@ NAVIGATION
 .navigation__link:hover,
 .navigation__link:hover::first-letter {
     /* todo: add transition */
-    color: #8BDCDC;
+    color: #8bdcdc;
 }
 
 /*********************************************************************
@@ -641,13 +640,13 @@ HEADER
 }
 
 .header::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -8rem;
     left: -1rem;
     width: 12rem;
     height: 12rem;
-    background-color: #0F9797;
+    background-color: #0f9797;
     border-radius: 50%;
     animation: movement 30s ease-in-out infinite;
     z-index: -1;
@@ -693,15 +692,13 @@ HEADER
 
 .header__icon {
     padding-right: 1rem;
-    color: #0F9797;
+    color: #0f9797;
     transition: color 250ms ease;
 }
 
 .header__icon:hover {
-    color: #8BDCDC;
+    color: #8bdcdc;
 }
-
-
 
 /*********************************************************************
 ABOUT
@@ -786,20 +783,21 @@ ABOUT
 }
 
 .profile__gradient::before {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), linear-gradient(225deg, rgba(15, 151, 151, 0.5) 15%, rgba(147, 190, 255, 0.5) 85%);
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+        linear-gradient(225deg, rgba(15, 151, 151, 0.5) 15%, rgba(147, 190, 255, 0.5) 85%);
     border-radius: 50%;
     z-index: 2;
 }
 
 .profile__gradient::after {
-    content: '';
+    content: "";
     position: absolute;
     background-color: #0f9797;
     left: 1.5rem;
@@ -867,7 +865,7 @@ ABOUT
     STACK
 *********************************************************************/
 .stack {
-    color: #0F9797;
+    color: #0f9797;
     list-style: none;
     padding: inherit;
     display: flex;
@@ -881,15 +879,15 @@ ABOUT
 }
 
 .stack__icon--html {
-    color: #DC4D25;
+    color: #dc4d25;
 }
 
 .stack__icon--css {
-    color: #156DB0;
+    color: #156db0;
 }
 
 .stack__icon--js {
-    color: #E2C430;
+    color: #e2c430;
 }
 
 .stack__text {
@@ -903,7 +901,7 @@ ABOUT
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1.2rem;
     text-transform: uppercase;
-    color: #5C5C5C;
+    color: #5c5c5c;
 }
 
 /*********************************************************************
@@ -924,7 +922,7 @@ ABOUT
 
 @media screen and (min-width: 768px) {
     .projects::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: -10rem;
@@ -973,11 +971,11 @@ ABOUT
         align-items: center;
         margin-bottom: 4rem;
     }
-    
+
     .project:first-of-type {
         margin-top: 4rem;
     }
-    
+
     .project:last-of-type {
         margin-bottom: 8rem;
     }
@@ -988,11 +986,11 @@ ABOUT
         margin-bottom: 6rem;
         max-width: 100%;
     }
-    
+
     .project:first-of-type {
         margin-top: 6rem;
     }
-    
+
     .project:last-of-type {
         margin-bottom: 12rem;
     }
@@ -1002,7 +1000,7 @@ ABOUT
     .project__description--right {
         margin-left: 3rem;
     }
-    
+
     .project__description--left {
         margin-right: 3rem;
         order: -1;
@@ -1013,7 +1011,7 @@ ABOUT
     .project__description--right {
         margin-left: 5rem;
     }
-    
+
     .project__description--left {
         margin-right: 5rem;
     }
@@ -1033,7 +1031,7 @@ ABOUT
 }
 
 .project__preview::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -1082,7 +1080,7 @@ ABOUT
         "Roboto",
         "Helvetica Neue", Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: #E5E5E5;
+    color: #e5e5e5;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -1111,8 +1109,8 @@ ABOUT
 *********************************************************************/
 .contact {
     text-align: center;
-    background-color: #0F9797;
-    color: #C3FFFF;
+    background-color: #0f9797;
+    color: #c3ffff;
     padding: 2rem 1rem;
     clip-path: ellipse(120% 100% at 50% 100%);
 }
@@ -1128,7 +1126,7 @@ ABOUT
 }
 
 .contact__link {
-    color: #C3FFFF;
+    color: #c3ffff;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -1137,11 +1135,11 @@ ABOUT
 }
 
 .contact__link:visited {
-    color: #C3FFFF;
+    color: #c3ffff;
 }
 
 .contact__text {
-    border-bottom: 1px solid #C3FFFF;
+    border-bottom: 1px solid #c3ffff;
 }
 
 .contact__link:hover .contact__text {

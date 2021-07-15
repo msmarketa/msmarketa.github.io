@@ -1,171 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Marketa Andreev Dragoun Portfolio</title>
+        <!-- todo: dopsat description -->
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dosis&family=Noto+Sans:ital@0;1&display=swap"
+            rel="stylesheet"
+        />
+        <!-- todo: stahovat jen ikony, ktere pouzivam -->
+        <link rel="stylesheet" href="fontawesome/all.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <title>Marketa Andreev Dragoun Portfolio</title>
-    <!-- todo: dopsat description -->
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dosis&family=Noto+Sans:ital@0;1&display=swap"
-        rel="stylesheet">
-    <!-- todo: stahovat jen ikony, ktere pouzivam -->
-    <link rel="stylesheet" href="fontawesome/all.css">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <body>
+        <div class="container container--narrow">
+            <header class="header">
+                <nav class="navigation">
+                    <a class="navigation__link" href="#profile">About</a>
+                    <a class="navigation__link" href="#projects">Projects</a>
+                    <a class="navigation__link" href="#contact">Contact</a>
+                </nav>
 
-<body>
-    <div class="container container--narrow">
-        <header class="header">
-            <nav class="navigation">
-                <a class="navigation__link" href="#profile">About</a>
-                <a class="navigation__link" href="#projects">Projects</a>
-                <a class="navigation__link" href="#contact">Contact</a>
-            </nav>
-
-            <section class="header__about">
-                <h1 class="header__heading">Markéta Andreev Dragoun</h1>
-                <div class="header__description">
-                    <p class="header__perex">UI/UX Designer turned front-end developer. Passionate about language
-                        learning, photography, and travel.</p>
-                    <div class="header__icons">
-                        <a class="header__link" href="mailto:madragoun@gmail.com">
-                            <i class="header__icon far fa-envelope"></i>
-                            <span class="header__link-destination">madragoun@gmail.com</span>
-                        </a>
-                        <a class="header__link" href="https://github.com/msmarketa/">
-                            <i class="header__icon fab fa-github"></i>
-                            <span class="header__link-destination">Github</span>
-                        </a>
-                        <a class="header__link" href="https://www.linkedin.com/in/msmarketa/">
-                            <i class="header__icon fab fa-linkedin"></i>
-                            <span class="header__link-destination">LinkedIn</span>
-                        </a>
+                <section class="header__about">
+                    <h1 class="header__heading">Markéta Andreev Dragoun</h1>
+                    <div class="header__description">
+                        <p class="header__perex">
+                            UI/UX Designer turned front-end developer. Passionate about language learning, photography,
+                            and travel.
+                        </p>
+                        <div class="header__icons">
+                            <a class="header__link" href="mailto:madragoun@gmail.com">
+                                <i class="header__icon far fa-envelope"></i>
+                                <span class="header__link-destination">madragoun@gmail.com</span>
+                            </a>
+                            <a class="header__link" href="https://github.com/msmarketa/">
+                                <i class="header__icon fab fa-github"></i>
+                                <span class="header__link-destination">Github</span>
+                            </a>
+                            <a class="header__link" href="https://www.linkedin.com/in/msmarketa/">
+                                <i class="header__icon fab fa-linkedin"></i>
+                                <span class="header__link-destination">LinkedIn</span>
+                            </a>
+                        </div>
                     </div>
+                </section>
+            </header>
+        </div>
+
+        <main class="container container--wide">
+            <section class="profile" id="profile">
+                <div class="profile__about">
+                    <div class="profile__description">
+                        <h2 class="heading heading--left"><span class="heading__highlight">About</span> me</h2>
+                        <div class="profile__detail">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque
+                                malesuada. Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam,
+                                nec tristique libero turpis a nisl. Sed sed mauris et
+                                <a href="#todo">purus varius varius</a> nec iaculis purus. Aenean consequat dictum
+                                cursus. Donec at arcu interdum, tempor libero mattis, iaculis lorem.
+                            </p>
+                            <h3 class="sr-only">Tech stack:</h3>
+                            <ul class="stack">
+                                <li class="stack__text">
+                                    <i class="stack__icon stack__icon--html fab fa-html5"></i>HTML
+                                </li>
+                                <li class="stack__text">
+                                    <i class="stack__icon stack__icon--css fab fa-css3-alt"></i>CSS
+                                </li>
+                                <li class="stack__text">
+                                    <i class="stack__icon stack__icon--js fab fa-js-square"></i>JavaScript
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile__gradient">
+                    <img
+                        class="profile__photo"
+                        width="824"
+                        height="824"
+                        sizes="
+                            (min-width: 1440px) 640px,
+                            (min-width: 1024px) 480px,
+                            (min-width: 768px) 320px,
+                            240px
+                        "
+                        srcset="
+                            /img/profile_jlnoaf_c_scale,w_240.jpg   240w,
+                            /img/profile_jlnoaf_c_scale,w_576.jpg   576w,
+                            /img/profile_jlnoaf_c_scale,w_824.jpg   824w,
+                            /img/profile_jlnoaf_c_scale,w_1004.jpg 1004w,
+                            /img/profile_jlnoaf_c_scale,w_1142.jpg 1142w,
+                            /img/profile_jlnoaf_c_scale,w_1280.jpg 1280w
+                        "
+                        src="/img/profile_jlnoaf_c_scale,w_824.jpg"
+                        alt="Marketa Andreev Dragoun"
+                    />
                 </div>
             </section>
-        </header>
-    </div>
 
-    <main class="container container--wide">
-        <section class="profile" id="profile">
-            <div class="profile__about">
-                <div class="profile__description">
-                    <h2 class="heading heading--left"><span class="heading__highlight">About</span> me</h2>
-                    <div class="profile__detail">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada. Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam, nec tristique libero turpis a nisl. Sed sed mauris et <a href="#todo">purus varius varius</a> nec iaculis purus. Aenean consequat dictum cursus. Donec at arcu interdum, tempor libero mattis, iaculis lorem. </p>
-                        <h3 class="sr-only">Tech stack:</h3>
-                        <ul class="stack">
-                            <li class="stack__text"><i class="stack__icon stack__icon--html fab fa-html5"></i>HTML</li>
-                            <li class="stack__text"><i class="stack__icon stack__icon--css fab fa-css3-alt"></i>CSS</li>
-                            <li class="stack__text"><i class="stack__icon stack__icon--js fab fa-js-square"></i>JavaScript</li>
+            <section id="projects" class="projects">
+                <h2 class="heading">Latest <span class="heading__highlight">projects</span></h2>
+                <article class="project">
+                    <div class="project__preview">
+                        <img
+                            class="project__image"
+                            width="768"
+                            height="512"
+                            sizes="
+                                (min-width: 1024px) 480px,
+                                (min-width: 769px) 320px,
+                                (min-width: 425px) calc(0.9 * (100vw - 2rem)),
+                                100vw
+                            "
+                            srcset="
+                                /img/yasashii_profile_cqxyzk_c_scale,w_320.jpg   320w,
+                                /img/yasashii_profile_cqxyzk_c_scale,w_768.jpg   768w,
+                                /img/yasashii_profile_cqxyzk_c_scale,w_1112.jpg 1112w,
+                                /img/yasashii_profile_cqxyzk_c_scale,w_1320.jpg 1320w
+                            "
+                            src="yasashii_profile_cqxyzk_c_scale,w_768.jpg"
+                            alt="Project Name"
+                        />
+                        <ul class="project__technologies">
+                            <li class="project__technology">HTML</li>
+                            <li class="project__technology">CSS</li>
+                            <li class="project__technology">JavaScript</li>
+                            <li class="project__technology">Bootstrap</li>
                         </ul>
                     </div>
-                </div>
-            </div>
-            <div class="profile__gradient">
-                <img 
-                    class="profile__photo" 
-                    width="824" 
-                    height="824" 
-                    sizes="
-                        (min-width: 1440px) 640px,
-                        (min-width: 1024px) 480px,
-                        (min-width: 768px) 320px,
-                        240px
-                        " 
-                    srcset="
-                        /img/profile_jlnoaf_c_scale,w_240.jpg 240w,
-                        /img/profile_jlnoaf_c_scale,w_576.jpg 576w,
-                        /img/profile_jlnoaf_c_scale,w_824.jpg 824w,
-                        /img/profile_jlnoaf_c_scale,w_1004.jpg 1004w,
-                        /img/profile_jlnoaf_c_scale,w_1142.jpg 1142w,
-                        /img/profile_jlnoaf_c_scale,w_1280.jpg 1280w
-                    "
-                    src="/img/profile_jlnoaf_c_scale,w_824.jpg"
-                    alt="Marketa Andreev Dragoun"
-                >
-            </div>
-        </section>
+                    <div class="project__description project__description--right">
+                        <h3>Project name</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque
+                            malesuada. Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam, nec
+                            tristique libero turpis a nisl.
+                        </p>
+                        <a class="project__link" href="#">view</a>
+                    </div>
+                </article>
 
-        <section id="projects" class="projects">
-            <h2 class="heading">Latest <span class="heading__highlight">projects</span></h2>
-            <article class="project">
-                <div class="project__preview">
-                    <img 
-                        class="project__image"
-                        width="768"
-                        height="512" 
-                        sizes="
-                            (min-width: 1024px) 480px,
-                            (min-width: 769px) 320px,
-                            (min-width: 425px) calc(0.9 * (100vw - 2rem)),
-                            100vw
-                            "
-                        srcset="
-                            /img/yasashii_profile_cqxyzk_c_scale,w_320.jpg 320w,
-                            /img/yasashii_profile_cqxyzk_c_scale,w_768.jpg 768w,
-                            /img/yasashii_profile_cqxyzk_c_scale,w_1112.jpg 1112w,
-                            /img/yasashii_profile_cqxyzk_c_scale,w_1320.jpg 1320w
-                            "
-                        src="yasashii_profile_cqxyzk_c_scale,w_768.jpg" 
-                        alt="Project Name"
-                    >
-                    <ul class="project__technologies">
-                        <li class="project__technology">HTML</li>
-                        <li class="project__technology">CSS</li>
-                        <li class="project__technology">JavaScript</li>
-                        <li class="project__technology">Bootstrap</li>
-                    </ul>
-                </div>
-                <div class="project__description project__description--right">
-                    <h3>Project name</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada.
-                        Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam, nec tristique
-                        libero turpis a nisl.</p>
-                    <a class="project__link" href="#">view</a>
-                </div>
-            </article>
+                <article class="project">
+                    <div class="project__preview">
+                        <img class="project__image" src="/img/yasashii.jpg" alt="Project Name" />
+                        <ul class="project__technologies">
+                            <li class="project__technology">HTML</li>
+                            <li class="project__technology">CSS</li>
+                            <li class="project__technology">JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="project__description project__description--left">
+                        <h3>Project name</h3>
+                        <p>
+                            Lorem dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada.
+                            Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam, nec tristique
+                            libero turpis a nisl.
+                        </p>
+                        <a class="project__link" href="#">view</a>
+                    </div>
+                </article>
+            </section>
+        </main>
 
-            <article class="project">
-                <div class="project__preview">
-                    <img class="project__image" src="/img/yasashii.jpg" alt="Project Name">
-                    <ul class="project__technologies">
-                        <li class="project__technology">HTML</li>
-                        <li class="project__technology">CSS</li>
-                        <li class="project__technology">JavaScript</li>
-                    </ul>
-                </div>
-                <div class="project__description project__description--left">
-                    <h3>Project name</h3>
-                    <p>Lorem dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada. Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam, nec tristique libero turpis a nisl.</p>
-                    <a class="project__link" href="#">view</a>
-                </div>
-            </article>
-        </section>
-    </main>
-
-    <footer id="contact" class="contact">
-        <h2 class="heading--light">Get in touch</h2>
-        <p class="contact__detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada.</p>
-        <section class="contact__links">
-            <a class="contact__link" href="mailto:madragoun@gmail.com">
-                <i class="contact__icon far fa-envelope"></i>
-                <span class="contact__text">madragoun@gmail.com</span>
-            </a>
-            <a class="contact__link" href="https://github.com/msmarketa/">
-                <i class="contact__icon fab fa-github"></i>
-                <span class="contact__text">Github</span>
-            </a>
-            <a class="contact__link" href="https://www.linkedin.com/in/msmarketa/">
-                <i class="contact__icon fab fa-linkedin"></i>
-                <span class="contact__text">LinkedIn</span>
-            </a>
-        </section>
-    </footer>
-    <script type="text/javascript" src="scripts.js"></script>
-</body>
-
+        <footer id="contact" class="contact">
+            <h2 class="heading--light">Get in touch</h2>
+            <p class="contact__detail">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada.Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada.Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Nullam varius scelerisque malesuada.
+            </p>
+            <section class="contact__links">
+                <a class="contact__link" href="mailto:madragoun@gmail.com">
+                    <i class="contact__icon far fa-envelope"></i>
+                    <span class="contact__text">madragoun@gmail.com</span>
+                </a>
+                <a class="contact__link" href="https://github.com/msmarketa/">
+                    <i class="contact__icon fab fa-github"></i>
+                    <span class="contact__text">Github</span>
+                </a>
+                <a class="contact__link" href="https://www.linkedin.com/in/msmarketa/">
+                    <i class="contact__icon fab fa-linkedin"></i>
+                    <span class="contact__text">LinkedIn</span>
+                </a>
+            </section>
+        </footer>
+        <script type="text/javascript" src="scripts.js"></script>
+    </body>
 </html>
