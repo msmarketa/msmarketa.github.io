@@ -722,7 +722,6 @@ ABOUT
     .profile {
         flex-direction: row;
         justify-content: space-between;
-        height: 35rem;
     }
 }
 
@@ -732,13 +731,24 @@ ABOUT
         margin-left: auto;
         margin-right: auto;
         position: relative;
-        overflow: hidden;
         max-width: 2080px;
     }
 }
 
-@media screen and (min-width: 1440px) {
-    .profile {
+.profile__image {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .profile__image {
+        overflow: hidden;
+        width: 100%;
+        max-width: 2080px;
+        position: absolute;
+        top: 0;
+        right: 0;
         height: 45rem;
     }
 }
