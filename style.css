@@ -490,7 +490,7 @@ a:active {
     margin-right: 1rem;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .container--wide {
         margin-left: auto;
         margin-right: auto;
@@ -718,14 +718,14 @@ ABOUT
     }
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .profile {
         flex-direction: row;
         justify-content: space-between;
     }
-}
+} */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .profile {
         display: block;
         margin-left: auto;
@@ -771,7 +771,7 @@ ABOUT
     padding-bottom: 15rem;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .profile__gradient {
         top: 5rem;
         width: 20rem;
@@ -779,15 +779,24 @@ ABOUT
         padding-bottom: 20rem;
         margin-left: 3rem;
     }
+} */
+
+@media screen and (min-width: 768px) {
+    .profile__gradient {
+        position: absolute;
+        top: 5rem;
+        left: min(100% - 22rem);
+        width: 25rem;
+        padding-bottom: 25rem;
+        margin-left: auto;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .profile__gradient {
-        position: absolute;
-        left: min(100% - 25rem, 1440px);
+        left: min(100% - 25rem);
         width: 30rem;
         padding-bottom: 30rem;
-        margin-left: auto;
     }
 }
 
@@ -849,8 +858,17 @@ ABOUT
     margin-top: 3%;
 }
 
+@media screen and (min-width: 768px) {
+    .profile__about {
+        width: calc(100% - 25rem);
+        max-width: 30rem;
+        margin-left: 3%;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .profile__about {
+        width: 100%;
         max-width: 55rem;
         margin-left: auto;
         margin-right: auto;
@@ -860,6 +878,7 @@ ABOUT
 @media screen and (min-width: 768px) {
     .profile__description {
         margin-left: 1rem;
+        padding-top: 2rem;
     }
 
     .profile__detail {
