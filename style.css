@@ -1147,6 +1147,7 @@ ABOUT
 
 .project__link {
     display: inline-block;
+    margin-right: 1rem;
 }
 
 .project__link::after {

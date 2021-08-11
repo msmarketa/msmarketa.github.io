@@ -29,8 +29,7 @@
                     <h1 class="header__heading">Markéta Andreev Dragoun</h1>
                     <div class="header__description">
                         <p class="header__perex">
-                            UI/UX Designer turned front-end developer. Passionate about language learning, photography,
-                            and travel.
+                            Front-end developer with a professional UI/UX design background and international experience.
                         </p>
                         <div class="header__icons">
                             <a class="header__link" href="mailto:madragoun@gmail.com">
@@ -57,20 +56,6 @@
                     <div class="profile__description">
                         <h2 class="heading heading--left"><span class="heading__highlight">About</span> me</h2>
                         <div class="profile__detail">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque
-                                malesuada. Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam,
-                                nec tristique libero turpis a nisl. Sed sed mauris et
-                                <a href="#todo">purus varius varius</a> nec iaculis purus. Aenean consequat dictum
-                                cursus. Donec at arcu interdum, tempor libero mattis, iaculis lorem.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque
-                                malesuada. Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam,
-                                nec tristique libero turpis a nisl. Sed sed mauris et
-                                <a href="#todo">purus varius varius</a> nec iaculis purus. Aenean consequat dictum
-                                cursus. Donec at arcu interdum, tempor libero mattis, iaculis lorem.
-                            </p>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque
                                 malesuada. Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam,
@@ -147,37 +132,71 @@
                             <li class="project__technology">HTML</li>
                             <li class="project__technology">CSS</li>
                             <li class="project__technology">JavaScript</li>
-                            <li class="project__technology">Bootstrap</li>
                         </ul>
                     </div>
                     <div class="project__description project__description--right">
-                        <h3>Project name</h3>
+                        <h3>Personal portfolio</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque
-                            malesuada. Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam, nec
-                            tristique libero turpis a nisl.
+                            Fully designed and hand coded static website as a showcase of my skills. Uses semantic HTML, modern CSS (flexbox, fluid typography, animations), and vanilla JavaScript.
                         </p>
-                        <a class="project__link" href="#">view</a>
+                        <a class="project__link" href="https://github.com/msmarketa/msmarketa.github.io" target="_blank">view on Github</a>
                     </div>
                 </article>
-
                 <article class="project">
                     <div class="project__preview">
                         <img class="project__image" src="/img/yasashii.jpg" alt="Project Name" />
                         <ul class="project__technologies">
-                            <li class="project__technology">HTML</li>
-                            <li class="project__technology">CSS</li>
+                            <li class="project__technology">Bootstrap</li>
                             <li class="project__technology">JavaScript</li>
                         </ul>
                     </div>
                     <div class="project__description project__description--left">
-                        <h3>Project name</h3>
+                        <h3>Coffee Brewing Calculator</h3>
                         <p>
-                            Lorem dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada.
-                            Curabitur maximus, turpis quis ullamcorper pharetra, velit mi lobortis diam, nec tristique
-                            libero turpis a nisl.
+                            A simple calculator in vanilla JavaScript. Computes relevant values based on the last two inputs and allows for monitoring of elapsed brewing time.
                         </p>
-                        <a class="project__link" href="#">view</a>
+                        <a class="project__link" href="https://msmarketa.github.io/brew-calculator/src">view demo</a>
+                        <a class="project__link" href="https://github.com/msmarketa/brew-calculator" target="_blank">view on Github</a>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="project__preview">
+                        <img
+                            class="project__image"
+                            width="768"
+                            height="512"
+                            sizes="
+                                (min-width: 1024px) 480px,
+                                (min-width: 769px) 320px,
+                                (min-width: 425px) calc(0.9 * (100vw - 2rem)),
+                                100vw
+                            "
+                            srcset="
+                                /img/yasashii_profile_cqxyzk_c_scale,w_320.jpg   320w,
+                                /img/yasashii_profile_cqxyzk_c_scale,w_768.jpg   768w,
+                                /img/yasashii_profile_cqxyzk_c_scale,w_1112.jpg 1112w,
+                                /img/yasashii_profile_cqxyzk_c_scale,w_1320.jpg 1320w
+                            "
+                            src="yasashii_profile_cqxyzk_c_scale,w_768.jpg"
+                            alt="Project Name"
+                        />
+                        <ul class="project__technologies">
+                            <li class="project__technology">HTML</li>
+                            <li class="project__technology">CSS</li>
+                            <li class="project__technology">jQuery</li>
+                            <li class="project__technology">Bootstrap</li>
+                            <li class="project__technology">SASS</li>
+                        </ul>
+                    </div>
+                    <div class="project__description project__description--right">
+                        <h3>Aimful</h3>
+                        <p>
+                            A series of marketing landing pages built on Django templates with Bootstrap, using custom components and utilities. Handling events and sending asynchronous requests with jQuery. 
+                        </p>
+                        <a class="project__link" href="https://aimful.io" target="_blank">homepage</a>
+                        <a class="project__link" href="https://aimful.io/large-meeting/" target="_blank">landing page 1</a>
+                        <a class="project__link" href="https://aimful.io/recurring-kickoff/" target="_blank">landing page 2</a>
+                        <a class="project__link" href="https://aimful.io/recurring-review/" target="_blank">landing page 3</a>
                     </div>
                 </article>
             </section>
@@ -186,10 +205,7 @@
         <footer id="contact" class="contact">
             <h2 class="heading--light">Get in touch</h2>
             <p class="contact__detail">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada.Lorem ipsum dolor
-                sit amet, consectetur adipiscing elit. Nullam varius scelerisque malesuada.Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Nullam varius scelerisque malesuada.
+                 Send me an email!
             </p>
             <section class="contact__links">
                 <a class="contact__link" href="mailto:madragoun@gmail.com">
