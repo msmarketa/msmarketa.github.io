@@ -912,7 +912,8 @@ ABOUT
     list-style: none;
     padding: inherit;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin-bottom: 2rem;
 }
 
@@ -931,6 +932,14 @@ ABOUT
 
 .stack__icon--js {
     color: #e2c430;
+}
+
+.stack__icon--sass {
+    color: #cd679a;
+}
+
+.stack__icon--git {
+    color: #F1502F;
 }
 
 .stack__text {
@@ -1086,7 +1095,7 @@ ABOUT
     top: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, rgba(15, 151, 151, 0.1) 50%, rgba(15, 151, 151, 0.8));
+    background: linear-gradient(transparent 0%, 85%, #035454d1 95%);
 }
 
 @media screen and (min-width: 425px) {
