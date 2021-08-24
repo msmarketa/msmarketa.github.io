@@ -1,3 +1,4 @@
+// SCROLL ANIMATION
 const fadeinElements = document.querySelectorAll(".project");
 
 const elementInView = (element) => {
@@ -21,3 +22,8 @@ const scrollAnimation = () => {
 window.addEventListener("scroll", () => {
   scrollAnimation();
 });
+
+// COLLAPSIBLE BOX
+document.querySelector("[data-collapsible-box-link]").addEventListener('click', () => {
+  document.querySelector('.collapsible-box').classList.toggle('hidden');
+})

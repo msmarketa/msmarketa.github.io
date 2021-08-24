@@ -455,15 +455,22 @@ h3 {
     text-transform: uppercase;
 }
 
-a {
+strong {
+    font-family: "Noto Serif", "DM Serif Display", "Georgia", "Times New Roman", "Times", serif;
+    color: #077777;
+}
+
+a,
+.underline {
     color: #077777;
     text-decoration: none;
     border-bottom: 1px solid #077777;
     transition: border-bottom, color 250ms ease;
+    cursor: pointer;
 }
 
-a:hover {
-    /* todo: animate underline */
+a:hover,
+.underline:hover {
     border-bottom: 1px solid transparent;
 }
 
@@ -523,6 +530,18 @@ a:active {
 /*********************************************************************
     MISC
 *********************************************************************/
+/* COLLAPSIBLE BOX */
+.collapsible-box {
+    font-size: 0.8rem;
+    padding: 1rem;
+    background-color: #07777714;
+    margin-top: -0.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
 /* FONT AWESOME */
 .far,
 .fab {
@@ -718,13 +737,6 @@ ABOUT
     }
 }
 
-/* @media screen and (min-width: 768px) {
-    .profile {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-} */
-
 @media screen and (min-width: 768px) {
     .profile {
         display: block;
@@ -770,16 +782,6 @@ ABOUT
     height: 0;
     padding-bottom: 15rem;
 }
-
-/* @media screen and (min-width: 768px) {
-    .profile__gradient {
-        top: 5rem;
-        width: 20rem;
-        align-self: auto;
-        padding-bottom: 20rem;
-        margin-left: 3rem;
-    }
-} */
 
 @media screen and (min-width: 768px) {
     .profile__gradient {
