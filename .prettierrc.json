@@ -7,6 +7,12 @@
             "options": {
                 "singleQuote": true
             }
+        },
+        {
+            "files": "*.js",
+            "options": {
+                "tabWidth": 2
+            }
         }
     ]
 }

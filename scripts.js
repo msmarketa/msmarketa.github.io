@@ -24,6 +24,10 @@ window.addEventListener("scroll", () => {
 });
 
 // COLLAPSIBLE BOX
-document.querySelector("[data-collapsible-box-link]").addEventListener('click', () => {
-  document.querySelector('.collapsible-box').classList.toggle('hidden');
-})
+const link = document.querySelector("[data-collapsible-link]");
+
+link.addEventListener("click", () => {
+  document.querySelector(".collapsible").classList.toggle("hidden");
+});
+
+link.classList.add("a");

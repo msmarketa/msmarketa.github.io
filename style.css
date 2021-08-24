@@ -461,7 +461,7 @@ strong {
 }
 
 a,
-.underline {
+.a {
     color: #077777;
     text-decoration: none;
     border-bottom: 1px solid #077777;
@@ -470,7 +470,7 @@ a,
 }
 
 a:hover,
-.underline:hover {
+.a:hover {
     border-bottom: 1px solid transparent;
 }
 
@@ -530,12 +530,9 @@ a:active {
 /*********************************************************************
     MISC
 *********************************************************************/
-/* COLLAPSIBLE BOX */
-.collapsible-box {
-    font-size: 0.8rem;
-    padding: 1rem;
-    background-color: #07777714;
-    margin-top: -0.5rem;
+/* COLLAPSIBLE AREA */
+.collapsible {
+    font-size: 0.7rem;
 }
 
 .hidden {
@@ -1174,12 +1171,6 @@ ABOUT
     color: #c3ffff;
     padding: 2rem 1rem;
     clip-path: ellipse(120% 100% at 50% 100%);
-}
-
-.contact__detail {
-    max-width: 70ch;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .contact__links {
