@@ -59,6 +59,16 @@ h3 {
     display: block;
 }
 
+.header__link .sr-only {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: none;
+    clip: none;
+    border: 0;
+}
+
 .header__icon {
     font-size: 1rem;
 }
@@ -78,8 +88,7 @@ h3 {
     margin-top: 0;
 }
 
-.collapsible,
-.header__link-destination {
+.collapsible {
     display: inline;
 }
 
