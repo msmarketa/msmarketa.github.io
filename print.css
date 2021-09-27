@@ -64,8 +64,8 @@ h3 {
     width: auto;
     height: auto;
     margin: 0;
-    overflow: none;
-    clip: none;
+    overflow: auto;
+    clip: auto;
     border: 0;
 }
 
