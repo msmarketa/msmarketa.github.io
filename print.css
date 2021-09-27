@@ -71,6 +71,7 @@ h3 {
 
 .header__icon {
     font-size: 1rem;
+    padding-right: 0.3ch;
 }
 
 .a {
@@ -102,8 +103,8 @@ h3 {
 }
 
 .project {
-    margin-bottom: 2rem;
-    display: inline-block;
+    display: flex;
+    /* display: inline-block; */
 }
 
 .project p {
@@ -111,15 +112,20 @@ h3 {
 }
 
 .project__preview {
-    margin-right: 0;
+    margin-right: 2rem;
     margin-left: 0;
+    flex-basis: 40%;
+    flex-grow: 0;
 }
 
 .project__image {
-    float: left;
-    width: 35%;
     margin-right: 2rem;
     border-radius: 0.3rem;
+}
+
+.project__description {
+    flex-basis: 60%;
+    flex-grow: 0;
 }
 
 .project__technologies {
@@ -127,7 +133,8 @@ h3 {
     display: inline;
     background-color: white;
     left: 0;
-    bottom: 0;
+    bottom: 2.5rem;
+    padding: 0.3rem 0.5rem;
 }
 
 footer {
